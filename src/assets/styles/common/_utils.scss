@@ -13,3 +13,9 @@
 .para-muted {
     @include para-muted;
 }
+
+.bg-transparent {
+    background-color: transparent;
+    box-shadow: none;
+    border: 0;
+}

@@ -3,5 +3,37 @@
 .dash {
     &__container {
         @include flex-col-between;
+        padding: 0;
+    }
+
+    &__top {
+        @include flex-col-between;
+
+        height: 60vh;
+        background: linear-gradient(
+            0deg, rgba(7, 86, 97, 0.5), rgba(8, 60, 128, 0.5)
+        ), url(../../images/baloons.jpg);
+        background-size: cover;
+        background-position: bottom;
+        padding: 2rem;
+    }
+
+    &__details {
+        @include flex-center;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+            @include header-secondary;
+            color: var(--color-white);
+        }
+
+        p {
+            @include para-default;
+            color: var(--color-white);
+            margin: 1rem 4rem 2rem 0;
+            opacity: 0.9;
+            line-height: 1.5em;
+        }
     }
 }

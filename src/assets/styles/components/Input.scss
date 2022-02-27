@@ -17,4 +17,11 @@
         font-family: inherit;
         font-size: var(--fs-default);
     }
+
+    input.bg-transparent {
+        background-color: transparent;
+        box-shadow: none;
+        border: 0;
+        margin-bottom: 0;
+    }    
 }

@@ -1,0 +1,25 @@
+@import '../common/mixins';
+
+.search__input {
+    @include flex-center;
+    width: auto;
+    padding: 0 1rem;
+    background: var(--color-white);
+    border-radius: 20px;
+
+    &__left {
+        @include flex-center;
+        flex-basis: 12%;
+
+        svg {
+            height: 2rem;
+            width: 2rem;
+            color: var(--color-primary);
+        }
+    }
+
+    &__right {
+        @include flex-center;
+        flex: 1;
+    }
+}
