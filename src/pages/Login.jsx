@@ -23,7 +23,7 @@ export default function Login() {
         <p className="align-right mb-8 para-muted">
           <a href="#forgot">Forgot your password?</a>
         </p>
-        <Button type="primary">Login In</Button>
+        <Button type="primary" to="/dashboard">Login In</Button>
       </form>
 
       <div className="login__bottom">

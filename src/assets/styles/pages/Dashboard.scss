@@ -1,0 +1,7 @@
+@import '../common/mixins';
+
+.dash {
+    &__container {
+        @include flex-col-between;
+    }
+}

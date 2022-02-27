@@ -23,7 +23,7 @@ export default function Register() {
         <Input placeholder="Your Email" />
         <Input type="Password" placeholder="Password" />
         <p className="mb-8"></p>
-        <Button type="primary">Sign up</Button>
+        <Button type="primary" to="/dashboard">Sign up</Button>
       </form>
 
       <p className="align-center para-muted">
@@ -33,7 +33,7 @@ export default function Register() {
       <div className="login__bottom">
         <p className="align-center para-default">
           Already have an account?
-          <a href="/register">Login In</a>
+          <a href="/login">Login In</a>
         </p>
       </div>
     </div>
