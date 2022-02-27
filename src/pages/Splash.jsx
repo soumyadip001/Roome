@@ -24,7 +24,7 @@ export default function Splash() {
         />
       </div>
       <div className="splash__bottom">
-        <Button to="welcome">Get Started</Button>
+        <Button to="welcome" type="primary">Get Started</Button>
         <p className="splash__more">
           Already have an account?
           <a href="/login" className="">Login</a>

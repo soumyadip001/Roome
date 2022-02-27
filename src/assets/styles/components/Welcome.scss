@@ -7,7 +7,7 @@
     }
 
     &__image-box {
-        margin-top: 2rem;
+        margin-top: 4rem;
         @include flex-center;
         flex-direction: column;
     }
@@ -23,6 +23,31 @@
             @include flex-center;
         }
     }
+
+    &__desc {
+        @include flex-center;
+        flex-direction: column;
+        flex-basis: 100%;
+        text-align: center;
+
+        h1 {
+            @include header-secondary;
+        }
+
+        p {
+            @include para-default;
+            margin-top: 1rem;
+            color: var(--color-black);
+        }
+
+        &__actions {
+            @include flex-center;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 4rem;
+            gap: 1rem;
+        }
+    }
 }
 
 .dot {
@@ -31,6 +56,8 @@
     border-radius: 50%;
     background-color: var(--color-black);
     cursor: pointer;
+
+    &--primary { background-color: var(--color-primary); }
 
     &:not(:last-child) {
         margin-right: 1rem;
