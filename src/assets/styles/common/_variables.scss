@@ -1,0 +1,35 @@
+:root {
+	--color-primary: #56cdc4;
+	--color-black: #47484a;
+	--color-black-dark: #000;
+	--color-white: #fff;
+
+	--shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+	--shadow-black: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+	--line: 1px solid var(--color-black);
+
+	--yellow-filter: invert(48%) sepia(70%) saturate(2476%) hue-rotate(33deg)
+		brightness(118%) contrast(119%);
+	--primary-filter: invert(50%) sepia(80%) saturate(5600%) hue-rotate(235deg)
+		brightness(88%) contrast(100%);
+	--white-filter: brightness(0) invert(1);
+
+	--bp-largest: 75em;
+	--bp-large: 68.75em;
+	--bp-medium: 56.25em;
+	--bp-small: 37.5em;
+	--bp-smallest: 31.25em;
+
+    --font-default: "Poppins", sans-serif;
+
+	--fs-primary: 4rem;
+	--fs-default: 1.4rem;
+}
+
+// These duplicate variables are used in lighen() and darken() functions
+
+$color-primary: #56cdc4;
+$color-black: #47484a;
+$color-black-dark: #000;
+$color-white: #fff;

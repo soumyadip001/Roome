@@ -1,0 +1,38 @@
+@import '../common/mixins';
+
+.welcome {
+    &__container {
+        background-color: var(--color-white);
+        @include flex-col-between;
+    }
+
+    &__image-box {
+        margin-top: 2rem;
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    &__image {
+        width: auto;
+        height: 300px;
+        border-radius: 10px;
+
+        &__dots {
+            margin-top: 2rem;
+            width: 100%;
+            @include flex-center;
+        }
+    }
+}
+
+.dot {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: var(--color-black);
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+}

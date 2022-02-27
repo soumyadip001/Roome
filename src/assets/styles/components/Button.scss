@@ -1,0 +1,30 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: inherit;
+    font-size: var(--fs-default);
+    font-weight: 200;
+    color: var(--color-black);
+    background-color: var(--color-white);
+
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    border: 0;
+    box-shadow: var(--shadow-dark);
+    cursor: pointer;
+
+    &--primary {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+
+        &:hover {
+            background: darken(#56cdc4, 10%)
+        }
+    }
+
+    &--block {
+        width: 100%;
+    }
+}

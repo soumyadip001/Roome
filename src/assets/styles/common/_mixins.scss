@@ -1,0 +1,47 @@
+@mixin header-primary {
+    font-family: var(--font-default);
+    font-size: var(--fs-primary);
+    font-weight: 600;
+    line-height: 1.5em;
+    color: var(--color-black-dark);
+}
+
+@mixin header-secondary {
+    font-family: var(--font-default);
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: var(--color-black-dark);
+}
+
+@mixin para-default {
+    font-family: var(--font-default);
+    font-size: var(--fs-default);
+    font-weight: 400;
+    line-height: 1.2em;
+    color: var(--color-black);
+
+    a {
+      color: var(--color-primary);
+      margin-left: .5rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+}
+
+// flex
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-col-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+}

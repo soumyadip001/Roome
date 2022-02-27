@@ -1,0 +1,49 @@
+@import '../common/mixins';
+
+.splash {
+    &__container {
+        @include flex-col-between;
+
+        font-size: 2rem;
+        background: linear-gradient(
+            0deg, rgba(219, 230, 233, 0.5), rgba(218, 227, 226, 1)
+        ), url(../../images/splash.jpg);
+        background-size: cover;
+    }
+
+    &__top {
+        min-height: 20vh;
+        text-align: center;
+        padding-top: 4rem;
+
+        h1 {
+            margin-top: 1rem;
+            @include header-primary;
+        }
+
+        p {
+            @include para-default;
+        }
+    }
+
+    &__middle {
+        @include flex-center;
+
+        &__image {
+            width: auto;
+            height: 300px;
+            border-radius: 10px;
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    &__more {
+        @include para-default;
+        margin: 3rem 0;
+        color: var(--color-white);
+    }
+}
