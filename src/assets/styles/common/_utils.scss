@@ -1,0 +1,15 @@
+.align-center { text-align: center; }
+.align-right {
+    text-align: right;
+    align-self: flex-end;
+}
+
+.mb-4 { margin-bottom: 1rem; }
+.mb-8 { margin-bottom: 2rem; }
+
+.para-default {
+    @include para-default;
+}
+.para-muted {
+    @include para-muted;
+}

@@ -30,6 +30,15 @@
     }
 }
 
+@mixin para-muted {
+    @include para-default;
+
+    a {
+        font-weight: 400;
+      color: var(--color-black);
+    }
+}
+
 // flex
 @mixin flex-center {
     display: flex;

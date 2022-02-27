@@ -1,0 +1,46 @@
+@import '../common/mixins';
+
+.social__login {
+    @include flex-center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.social__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    font-family: inherit;
+    font-size: var(--fs-default);
+    font-weight: 400;
+    color: var(--color-white);
+    background-color: var(--color-white);
+
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    border: 0;
+    box-shadow: var(--shadow-dark);
+    cursor: pointer;
+    text-decoration: none;
+
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    &__fb {
+        background-color: #3b5998;
+    }
+
+    &__tw {
+        background-color: #00acee;
+    }
+
+    svg {
+        color: #fff;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.5rem;
+    }
+}

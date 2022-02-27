@@ -31,6 +31,19 @@
         }
     }
 
+    &--icon {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        justify-content: flex-start;
+
+        svg {
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+
     &--block {
         width: 100%;
     }

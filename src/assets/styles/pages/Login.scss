@@ -1,0 +1,29 @@
+@import '../common/mixins';
+
+.login {
+    &__container {
+        @include flex-col-between;
+        justify-content: flex-start;
+        margin-top: 1rem;
+
+        h1 {
+            margin-top: 1rem;
+            @include header-secondary;
+        }
+    }
+
+    &__form {
+        @include flex-center;
+        flex-direction: column;
+        width: 100%;
+        margin: 4rem 0;
+    }
+
+    &__bottom {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 4rem;
+    }
+}
