@@ -19,3 +19,8 @@
     box-shadow: none;
     border: 0;
 }
+
+// flex utils classes
+.flex-center { @include flex-center; }
+.flex-container { @include flex-container; }
+.flex-col-6 { @include flex-col-6; }

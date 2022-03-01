@@ -54,3 +54,13 @@
     width: 100vw;
     padding: 2rem;
 }
+
+@mixin flex-container {
+    @include flex-center;
+    width: 100%;
+}
+
+@mixin flex-col-6 {
+    @include flex-center;
+    flex-basis: 50%;
+}

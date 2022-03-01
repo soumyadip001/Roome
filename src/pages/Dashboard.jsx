@@ -3,6 +3,7 @@ import React from 'react'
 import Button from '../components/Button'
 import '../assets/styles/pages/Dashboard.scss'
 import SearchInput from '../components/SearchInput'
+import Dots from '../components/Slider/Dots';
 
 export default function Dashboard() {
   return (
@@ -12,9 +13,13 @@ export default function Dashboard() {
         <div className="dash__details">
           <h2>Cape Town</h2>
           <p>Extra ipsum dolor sit am sit loreet, sed dolor sit amet</p>
-          <div>
-            <Button type="primary" block={false}>View Hotels</Button>
-            <div></div>
+          <div className="flex-container">
+            <div className="flex-col-6">
+              <Button type="primary" block={false}>View Hotels</Button>
+            </div>
+            <div className="flex-col-6">
+              <Dots light />
+            </div>
           </div>
         </div>
       </div>
