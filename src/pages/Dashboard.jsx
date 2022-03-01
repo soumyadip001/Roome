@@ -7,6 +7,7 @@ import Dots from '../components/Slider/Dots';
 import Nav from '../components/Dashboard/Nav';
 import PopularDest from '../components/Dashboard/PopularDest';
 import BestDeal from '../components/Dashboard/BestDeal';
+import LastSearches from '../components/Dashboard/LastSearches';
 
 export default function Dashboard() {
   return (
@@ -29,7 +30,8 @@ export default function Dashboard() {
       <div className="dash__body">
         <PopularDest />
         <BestDeal />
-        <div className="mt-200">
+        <LastSearches />
+        <div className="mt-100">
           lorem ipsum dolor
         </div>
       </div>

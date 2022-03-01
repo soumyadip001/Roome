@@ -40,11 +40,12 @@
         position: absolute;
         left: 2rem;
         top: 1rem;
-        // color: var(--color-white);
+        color: var(--color-white);
+        letter-spacing: .5rem;
     }
 
     &__background {
-        width: 100%;
-        height: auto;
+        width: 22.4rem;
+        height: 13.2rem;
     }
 }

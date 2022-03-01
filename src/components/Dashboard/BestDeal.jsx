@@ -3,6 +3,9 @@ import { Room, Star, StarHalf, StarOutline } from '@material-ui/icons'
 
 import '../../assets/styles/components/Dashboard/BestDeal.scss'
 import defaultImage from '../../assets/images/Card-hotel.png'
+import Hotel1 from '../../assets/images/hotel/hotel1.jpg'
+import Hotel2 from '../../assets/images/hotel/hotel2.jpg'
+import Hotel3 from '../../assets/images/hotel/hotel3.jpg'
 
 export default function BestDeal() {
 
@@ -15,7 +18,7 @@ export default function BestDeal() {
       starCount: 4,
       subtitle: 'Delhi, India',
       title: 'Grand Royal Hotel',
-      url: defaultImage,
+      url: Hotel1,
     },
     {
       id: '2',
@@ -25,7 +28,7 @@ export default function BestDeal() {
       starCount: 3.5,
       subtitle: 'Delhi, India',
       title: 'Taj Bengal Hotel',
-      url: defaultImage,
+      url: Hotel2,
     },
     {
       id: '3',
@@ -35,7 +38,7 @@ export default function BestDeal() {
       starCount: 5,
       subtitle: 'Kolkata, India',
       title: 'ITC Sonal Tari',
-      url: defaultImage,
+      url: Hotel1,
     },
     {
       id: '4',
@@ -45,7 +48,7 @@ export default function BestDeal() {
       starCount: 4.5,
       subtitle: 'Delhi, India',
       title: 'Imperial Hotel',
-      url: defaultImage,
+      url: Hotel3,
     },
     {
       id: '5',
@@ -55,7 +58,7 @@ export default function BestDeal() {
       starCount: 2.5,
       subtitle: 'Darjeeling, India',
       title: 'Summit Montana Suites & Spa(Mall Road)',
-      url: defaultImage,
+      url: Hotel2,
     }
   ]
 
