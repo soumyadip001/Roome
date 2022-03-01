@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.3] - 2022-02-27
 ### Added
 - Added dashboard
+- Added best deal component
+- Added popular destinations component
+- Added sider dots component
 
 ## [0.0.2] - 2022-02-27
 ### Added
