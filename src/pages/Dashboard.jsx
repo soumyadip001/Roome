@@ -6,6 +6,7 @@ import SearchInput from '../components/SearchInput'
 import Dots from '../components/Slider/Dots';
 import Nav from '../components/Dashboard/Nav';
 import PopularDest from '../components/Dashboard/PopularDest';
+import BestDeal from '../components/Dashboard/BestDeal';
 
 export default function Dashboard() {
   return (
@@ -27,6 +28,10 @@ export default function Dashboard() {
       </div>
       <div className="dash__body">
         <PopularDest />
+        <BestDeal />
+        <div className="mt-200">
+          lorem ipsum dolor
+        </div>
       </div>
       <Nav />
     </div>

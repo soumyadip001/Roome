@@ -5,12 +5,15 @@
         @include flex-col-between;
         justify-content: flex-start;
         padding: 0;
+        overflow-y: auto;
     }
 
     &__top {
         @include flex-col-between;
 
         height: 65vh;
+        min-height: 500px;
+
         background: linear-gradient(
             0deg, rgba(7, 86, 97, 0.5), rgba(8, 60, 128, 0.5)
         ), url(../../images/baloons.jpg);
@@ -40,5 +43,7 @@
 
     &__body {
         @include flex-container;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
