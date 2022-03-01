@@ -4,6 +4,8 @@ import Button from '../components/Button'
 import '../assets/styles/pages/Dashboard.scss'
 import SearchInput from '../components/SearchInput'
 import Dots from '../components/Slider/Dots';
+import Nav from '../components/Dashboard/Nav';
+import PopularDest from '../components/Dashboard/PopularDest';
 
 export default function Dashboard() {
   return (
@@ -23,9 +25,10 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-      <div>
-        Popular Destinations
+      <div className="dash__body">
+        <PopularDest />
       </div>
+      <Nav />
     </div>
   )
 }

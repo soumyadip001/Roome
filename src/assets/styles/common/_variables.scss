@@ -8,6 +8,7 @@
 	--shadow-black: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 
 	--line: 1px solid var(--color-black);
+	--line-light: 1px solid #e5e5e5;
 
 	--yellow-filter: invert(48%) sepia(70%) saturate(2476%) hue-rotate(33deg)
 		brightness(118%) contrast(119%);
@@ -25,6 +26,7 @@
 
 	--fs-primary: 4rem;
 	--fs-default: 1.4rem;
+	--fs-small: 1rem;
 }
 
 // These duplicate variables are used in lighen() and darken() functions

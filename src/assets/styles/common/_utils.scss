@@ -7,12 +7,9 @@
 .mb-4 { margin-bottom: 1rem; }
 .mb-8 { margin-bottom: 2rem; }
 
-.para-default {
-    @include para-default;
-}
-.para-muted {
-    @include para-muted;
-}
+.header-small { @include header-small; }
+.para-default { @include para-default; }
+.para-muted { @include para-muted; }
 
 .bg-transparent {
     background-color: transparent;

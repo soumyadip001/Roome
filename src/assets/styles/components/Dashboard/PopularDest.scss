@@ -1,0 +1,50 @@
+@import '../../common/mixins';
+
+.popular__dest {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+
+    padding: 2rem;
+
+    &__body {
+        @include flex-center;
+        justify-content: flex-start;
+
+        margin-top: 2rem;
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+
+.destination__card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: relative;
+    flex-basis: 70%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-black);
+    min-width: 224px;
+
+    &:not(:last-child) {
+        margin-right: 1.2rem;
+    }
+
+    span {
+        @include para-default;
+
+        position: absolute;
+        left: 2rem;
+        top: 1rem;
+        // color: var(--color-white);
+    }
+
+    &__background {
+        width: 100%;
+        height: auto;
+    }
+}

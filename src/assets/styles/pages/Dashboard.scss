@@ -3,13 +3,14 @@
 .dash {
     &__container {
         @include flex-col-between;
+        justify-content: flex-start;
         padding: 0;
     }
 
     &__top {
         @include flex-col-between;
 
-        height: 60vh;
+        height: 65vh;
         background: linear-gradient(
             0deg, rgba(7, 86, 97, 0.5), rgba(8, 60, 128, 0.5)
         ), url(../../images/baloons.jpg);
@@ -35,5 +36,9 @@
             opacity: 0.9;
             line-height: 1.5em;
         }
+    }
+
+    &__body {
+        @include flex-container;
     }
 }

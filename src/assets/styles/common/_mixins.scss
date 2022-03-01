@@ -14,6 +14,14 @@
     color: var(--color-black-dark);
 }
 
+@mixin header-small {
+    font-family: var(--font-default);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    color: var(--color-black-dark);
+}
+
 @mixin para-default {
     font-family: var(--font-default);
     font-size: var(--fs-default);
@@ -63,4 +71,9 @@
 @mixin flex-col-6 {
     @include flex-center;
     flex-basis: 50%;
+}
+
+@mixin flex-col-4 {
+    @include flex-center;
+    flex-basis: 33.3333%;
 }
