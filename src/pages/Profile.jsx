@@ -34,31 +34,41 @@ export default function profile() {
             </div>
           </li>
           <li className="profile__nav__item">
-            <h3 className="profile__nav__item__title">Invite Friends</h3>
+            <h3 className="profile__nav__item__title">
+              <Link to="/profile/invite">Invite Friends</Link>
+            </h3>
             <div className="profile__nav__item__icon">
               <Group />
             </div>
           </li>
           <li className="profile__nav__item">
-            <h3 className="profile__nav__item__title">Credits & Coupons</h3>
+            <h3 className="profile__nav__item__title">
+              <Link to="/profile/credits">Credits & Coupons</Link>
+            </h3>
             <div className="profile__nav__item__icon">
               <Redeem />
             </div>
           </li>
           <li className="profile__nav__item">
-            <h3 className="profile__nav__item__title">Help Center</h3>
+            <h3 className="profile__nav__item__title">
+              <Link to="/help">Help Center</Link>
+            </h3>
             <div className="profile__nav__item__icon">
               <Help />
             </div>
           </li>
           <li className="profile__nav__item">
-            <h3 className="profile__nav__item__title">Payments</h3>
+            <h3 className="profile__nav__item__title">
+              <Link to="/profile/payments">Payments</Link>
+            </h3>
             <div className="profile__nav__item__icon">
               <CreditCard />
             </div>
           </li>
           <li className="profile__nav__item">
-            <h3 className="profile__nav__item__title">Settings</h3>
+            <h3 className="profile__nav__item__title">
+              <Link to="/profile/settings">Settings</Link>
+            </h3>
             <div className="profile__nav__item__icon">
               <Settings />
             </div>
