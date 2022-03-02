@@ -2,7 +2,6 @@ import React from 'react'
 import { Room, Star, StarHalf, StarOutline } from '@material-ui/icons'
 
 import '../../assets/styles/components/Dashboard/BestDeal.scss'
-import defaultImage from '../../assets/images/Card-hotel.png'
 import Hotel1 from '../../assets/images/hotel/hotel1.jpg'
 import Hotel2 from '../../assets/images/hotel/hotel2.jpg'
 import Hotel3 from '../../assets/images/hotel/hotel3.jpg'
