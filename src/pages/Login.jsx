@@ -1,17 +1,15 @@
 import React from 'react'
-import { ArrowBack } from '@material-ui/icons';
 
 import Button from '../components/Button'
 import SocialLogin from '../components/SocialLogin';
 import '../assets/styles/pages/Login.scss'
 import Input from '../components/Input';
+import BackButton from '../components/Button/BackButton';
 
 export default function Login() {
   return (
     <div className="login__container">
-      <Button to="back" target="/welcome" type="icon" block={false}>
-        <ArrowBack />
-      </Button>
+      <BackButton target="/welcome" />
       <h1>Log in</h1>
       <SocialLogin />
       <p className="align-center para-default">

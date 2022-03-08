@@ -1,9 +1,21 @@
 import React from 'react'
 
+import '../../assets/styles/pages/Profile.scss'
+import Button from '../../components/Button'
+import BackButton from '../../components/Button/BackButton'
+import Input from '../../components/Input'
+
 export default function ForgotPassword() {
   return (
-    <div>
-      Forgot Password
+    <div className="flex-col-start">
+      <BackButton />
+      <h2 className="header-small mt-10">Forgot Password</h2>
+      <p className="mt-4 header-secondary-text">lorem ipsum dolor sit amet lore m lorem ipsum dolor sit amet</p>
+
+      <div className="profile__below__input">
+        <Input placeholder={'Enter Your Email'} />
+        <Button block type="primary">Reset</Button>
+      </div>
     </div>
   )
 }

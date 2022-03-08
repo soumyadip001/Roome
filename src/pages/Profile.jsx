@@ -35,6 +35,16 @@ export default function profile() {
           </li>
           <li className="profile__nav__item">
             <h3 className="profile__nav__item__title">
+              <Link to="/profile/forgot-password">
+                Forgot Password
+              </Link>
+            </h3>
+            <div className="profile__nav__item__icon">
+              <Lock />
+            </div>
+          </li>
+          <li className="profile__nav__item">
+            <h3 className="profile__nav__item__title">
               <Link to="/profile/invite">Invite Friends</Link>
             </h3>
             <div className="profile__nav__item__icon">
