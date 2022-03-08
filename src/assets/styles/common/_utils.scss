@@ -9,6 +9,7 @@
 .mt-10 { margin-top: 2.5rem; }
 .mb-4 { margin-bottom: 1rem; }
 .mb-8 { margin-bottom: 2rem; }
+.mr-4 { margin-right: 1rem; }
 .mt-100 { margin-top: 100px; }
 .mt-200 { margin-top: 200px; }
 
@@ -29,3 +30,13 @@
 .flex-container { @include flex-container; }
 .flex-col-start { @include flex-col-start; }
 .flex-col-6 { @include flex-col-6; }
+
+.stick-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    padding-bottom: 5rem;
+    background-color: #dbdbdb;
+}
