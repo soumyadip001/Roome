@@ -9,7 +9,7 @@ import Keyboard from '../../components/Keyboard'
 export default function ForgotPassword() {
   return (
     <div className="flex-col-start">
-      <BackButton />
+      <BackButton target="/profile" />
       <h2 className="header-small mt-10">Forgot Password</h2>
       <p className="mt-4 mb-8 mr-4 header-secondary-text">lorem ipsum dolor sit amet lore m lorem ipsum dolor sit amet</p>
 
