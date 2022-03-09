@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import {
   Lock, Group, Settings, CreditCard, Help, Redeem
 } from '@material-ui/icons'
@@ -86,7 +86,6 @@ export default function profile() {
         </ul>
       </div>
       <Nav selected="profile" />
-      <Outlet />
     </div>
   )
 }

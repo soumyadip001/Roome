@@ -4,6 +4,7 @@ import Welcome from './pages/Welcome';
 import Login from './pages/Login'; 
 import Register from './pages/Register'; 
 import Dashboard from './pages/Dashboard';
+import Favourite from './pages/Favourite';
 
 import Profile from './pages/Profile';
 import ChangePassword from './pages/Profile/ChangePassword';
@@ -21,6 +22,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/favourite" element={<Favourite />} />
 
       <Route path="/profile" element={<Profile />} />
       <Route path="/profile/change-password" element={<ChangePassword />} />
