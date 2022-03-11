@@ -1,0 +1,41 @@
+@import '../common/mixins';
+
+.tab {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        list-style: none;
+        background: var(--color-grey-light);
+        padding: 1rem 1.8rem;
+        border-radius: 100px;
+
+        &-item {
+            @include flex-center;
+        }
+
+        &-link {
+            @include para-default;
+            text-decoration: none;
+            font-size: var(--fs-lg);
+
+            &:active, &:hover, &:focus, &--selected {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        margin-top: 2rem;
+    }
+}

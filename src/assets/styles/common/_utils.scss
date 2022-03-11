@@ -13,6 +13,17 @@
 .mt-100 { margin-top: 100px; }
 .mt-200 { margin-top: 200px; }
 
+.m-0 { margin: 0 !important; }
+.p-0 { padding: 0 !important; }
+.px-0 {
+    padding-left: 0; 
+    padding-right: 0; 
+}
+.py-0 {
+    padding-top: 0; 
+    padding-bottom: 0; 
+}
+
 .header-primary { @include header-primary; }
 .header-small { @include header-small; }
 .para-default { @include para-default; }
@@ -30,6 +41,7 @@
 .flex-container { @include flex-container; }
 .flex-col-start { @include flex-col-start; }
 .flex-col-6 { @include flex-col-6; }
+.w-full { width: 100%; }
 
 .stick-bottom {
     position: absolute;

@@ -14,6 +14,10 @@ import Credits from './pages/Profile/Credits';
 import Payment from './pages/Profile/Payment';
 import Settings from './pages/Profile/Settings';
 
+import Favourites from './pages/Favourite/Favourites'
+import Featured from './pages/Favourite/Featured'
+import Popular from './pages/Favourite/Popular'
+
 function App() {
   return (
     <Routes>
@@ -22,7 +26,6 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/favourite" element={<Favourite />} />
 
       <Route path="/profile" element={<Profile />} />
       <Route path="/profile/change-password" element={<ChangePassword />} />
@@ -31,6 +34,15 @@ function App() {
       <Route path="/profile/credits" element={<Credits />} />
       <Route path="/profile/payment" element={<Payment />} />
       <Route path="/profile/settings" element={<Settings />} />
+
+      <Route
+        path="/favourite"
+        element={<Favourite />}
+      >
+        <Route path="popular" element={<Popular />} />
+        <Route path="featured" element={<Featured />} />
+        <Route path="favourites" element={<Favourites />} />
+      </Route>
     </Routes>
   );
 }

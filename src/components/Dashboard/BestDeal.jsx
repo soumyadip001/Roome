@@ -6,7 +6,7 @@ import Hotel1 from '../../assets/images/hotel/hotel1.jpg'
 import Hotel2 from '../../assets/images/hotel/hotel2.jpg'
 import Hotel3 from '../../assets/images/hotel/hotel3.jpg'
 
-export default function BestDeal() {
+export default function BestDeal({ title = 'Best Deal', noPadding = false }) {
 
   const hotelDeals = [
     {
@@ -76,12 +76,17 @@ export default function BestDeal() {
     return (5 - (halfStar + fullStar))
   }
 
+  const _noPadding = noPadding ? 'best-deal p-0' : 'best-deal'
+
   return (
-    <div className="best-deal">
-      <h3 className="header-small">Best Deal</h3>
+    <div className={_noPadding}>
+
+      { (title !== 'blank') &&
+        <h3 className="header-small">{ title }</h3>
+      }
 
       {
-        hotelDeals.map(hotel =>
+        hotelDeals.sort(() => Math.random() - 0.5).map(hotel =>
           <div className="best-deal__card flex-container" key={hotel.id}>
             <div className="best-deal__card__image">
               <img src={hotel.url} alt="Hotel Name Here" />
