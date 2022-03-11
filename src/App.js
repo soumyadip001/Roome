@@ -18,6 +18,8 @@ import Favourites from './pages/Favourite/Favourites'
 import Featured from './pages/Favourite/Featured'
 import Popular from './pages/Favourite/Popular'
 
+import HotelDetail from './pages/HotelDetail';
+
 function App() {
   return (
     <Routes>
@@ -43,6 +45,8 @@ function App() {
         <Route path="featured" element={<Featured />} />
         <Route path="favourites" element={<Favourites />} />
       </Route>
+
+      <Route path="/hotel-details" element={<HotelDetail />} />
     </Routes>
   );
 }

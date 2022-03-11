@@ -1,5 +1,6 @@
 import React from 'react'
 import { Room, Star, StarHalf, StarOutline } from '@material-ui/icons'
+import { useNavigate } from 'react-router-dom'
 
 import '../../assets/styles/components/Dashboard/BestDeal.scss'
 import Hotel1 from '../../assets/images/hotel/hotel1.jpg'
@@ -77,9 +78,10 @@ export default function BestDeal({ title = 'Best Deal', noPadding = false }) {
   }
 
   const _noPadding = noPadding ? 'best-deal p-0' : 'best-deal'
+  const navigate = useNavigate()
 
   return (
-    <div className={_noPadding}>
+    <div className={_noPadding} onClick={() => { navigate('/hotel-details') }}>
 
       { (title !== 'blank') &&
         <h3 className="header-small">{ title }</h3>
