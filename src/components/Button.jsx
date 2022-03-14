@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../assets/styles/components/Button.scss'
 
-export default function Button({ children, to, type, block, target }) {
+export default function Button({ children, to, type, block, target, theme = 'dark' }) {
   const _href = to ? to : '#'
   const _target = target ? target : '#'
   const buttonType = type ? type : 'secondary'
@@ -14,11 +14,11 @@ export default function Button({ children, to, type, block, target }) {
   }
 
   return !buttonHistory ?
-  <Link className={`btn btn--${buttonType} ${buttonBlock}`} to={_href}>
+  <Link className={`btn btn--${buttonType} ${buttonBlock} btn--${theme}`} to={_href}>
     { children }
   </Link>
   :
-  <Link className={`btn btn--${buttonType} ${buttonBlock}`} to={_target}>
+  <Link className={`btn btn--${buttonType} ${buttonBlock} btn--${theme}`} to={_target}>
     { children }
   </Link>;
 }

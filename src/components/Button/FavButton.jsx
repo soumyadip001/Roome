@@ -3,10 +3,12 @@ import { FavoriteBorder } from '@material-ui/icons';
 
 import Button from '../Button'
 
-export default function FavButton({ target }) {
+export default function FavButton({ theme = 'dark' }) {
   return (
-    <Button type="icon" block={false}>
-      <FavoriteBorder />
-    </Button>
+    <div className={`btn--rounded btn--${theme}`}>
+      <Button type="icon" block={false}>
+        <FavoriteBorder />
+      </Button>
+    </div>
   )
 }

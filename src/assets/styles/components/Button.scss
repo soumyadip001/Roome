@@ -47,4 +47,20 @@
     &--block {
         width: 100%;
     }
+
+    &--rounded {
+        border-radius: 50%;
+        background-color: var(--color-white);
+        padding: .5rem;
+
+        svg {
+            color: var(--color-primary);
+        }
+    }
+
+    &--light {
+        svg {
+            color: var(--color-white);
+        }
+    }
 }

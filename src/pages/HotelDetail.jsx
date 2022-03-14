@@ -1,23 +1,32 @@
 import React from 'react'
+import { Star, StarHalf, StarOutline } from '@material-ui/icons'
 
 import '../assets/styles/pages/HotelDetails.scss'
 import Button from '../components/Button'
 import BackButton from '../components/Button/BackButton'
+import FavButton from '../components/Button/FavButton'
 
 export default function HotelDetail() {
   return (
     <div className="hd__container">
       <div className="hd__banner-box">
         <div className="hd__nav">
-          <BackButton to="#" />
-          Fav
+          <BackButton to="#" theme="light" />
+          <FavButton to="#" />
         </div>
         <div className="hd__banner__card">
           <div className="hd__banner__card--top">
             <div className="hd__banner__card--left">
               <h2>Grand Royal Hotel</h2>
               <p>lorem ipsum dolor sit</p>
-              <p>***** Start Rating</p>
+              <p className="text-primary mt-2 flex-center">
+                <Star key={1} />
+                <Star key={2} />
+                <Star key={3} />
+                <StarHalf key={4} />
+                <StarOutline key={5} />
+                <span className="ml-2">from 228 reviews</span>
+              </p>
             </div>
             <div className="hd__banner__card--right">
               <h2>$220</h2>
@@ -25,7 +34,7 @@ export default function HotelDetail() {
             </div>
           </div>
           <div className="hd__banner__card--bottom">
-            <Button block={true}>Pick Time</Button>
+            <Button block={true} type="primary">Pick Time</Button>
           </div>
         </div>
       </div>
